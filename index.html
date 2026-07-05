@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luiz Felipe | Finanças & Data Analytics</title>
+  <style>
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:#f4f7fb;color:#101828;line-height:1.6}
+    a{color:inherit}
+    .navbar{position:sticky;top:0;z-index:10;display:flex;justify-content:space-between;align-items:center;padding:18px 7%;background:rgba(5,7,12,.96);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.08)}
+    .brand{display:flex;align-items:center;gap:12px;color:#fff;text-decoration:none;font-weight:900;font-size:20px}
+    .brand-icon{height:28px;display:flex;align-items:end;gap:4px}
+    .brand-icon i{display:block;width:7px;background:#ffc400;border-radius:99px}
+    .brand-icon i:nth-child(1){height:10px}.brand-icon i:nth-child(2){height:18px}.brand-icon i:nth-child(3){height:28px}
+    nav{display:flex;gap:26px}
+    nav a{color:#e5edf8;text-decoration:none;font-weight:800;font-size:14px}
+    nav a:hover{color:#ffc400}
+    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center;padding:86px 7%;background:radial-gradient(circle at 15% 18%,rgba(255,196,0,.13),transparent 25%),radial-gradient(circle at 85% 12%,rgba(13,110,253,.17),transparent 30%),linear-gradient(135deg,#05070b,#0b1320 62%,#05070b);color:#fff}
+    .tagline,.kicker{display:inline-block;color:#ffc400;text-transform:uppercase;font-size:13px;font-weight:900;letter-spacing:.08em;margin-bottom:12px}
+    h1{font-size:54px;line-height:1.05;margin:0 0 22px;letter-spacing:-1.5px}
+    h2{font-size:34px;line-height:1.15;margin:0 0 16px}
+    h3{font-size:22px;margin:0 0 10px}
+    .hero p{font-size:18px;color:#dbe3ee;max-width:720px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 18px;border-radius:12px;text-decoration:none;font-weight:900;margin-right:10px;margin-top:16px}
+    .primary{background:#ffc400;color:#111827}.secondary{border:1px solid rgba(255,255,255,.22);color:#fff}
+    .hero-panel{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:26px;padding:30px;box-shadow:0 30px 80px rgba(0,0,0,.4)}
+    .hero-panel h2{font-size:46px;color:#ffc400}.hero-panel p{font-size:16px;color:#dbe3ee}.hero-panel a{color:#ffc400;font-weight:900;text-decoration:none}
+    .section{padding:64px 7%;max-width:1280px;margin:auto}
+    .split,.two{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+    .text-block{font-size:18px;color:#475467}
+    .section-header{margin-bottom:30px}.section-header p{color:#667085;max-width:760px}
+    .cards{display:grid;grid-template-columns:1.15fr 1fr 1fr;gap:22px}
+    .card,.info,.evidence article,.skill,.before,.after{background:#fff;border:1px solid #e6edf6;border-radius:22px;padding:28px;box-shadow:0 18px 40px rgba(16,24,40,.06)}
+    .main-card{background:#08111d;color:#fff}.card .label{color:#ffc400;font-size:12px;text-transform:uppercase;font-weight:900;letter-spacing:.08em}.card p{color:#667085}.main-card p{color:#d5deea}.card a{color:#ffc400;font-weight:900;text-decoration:none}
+    .skills{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.skill strong{font-size:20px}
+    .case-hero{padding-top:86px}
+    .dashboard{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:26px;padding:24px;box-shadow:0 30px 80px rgba(0,0,0,.42)}
+    .dashboard-title{text-align:center;font-weight:900;margin-bottom:16px}
+    .mini-kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.mini-kpis div{background:#0c1728;border-radius:14px;padding:14px;text-align:center}.mini-kpis small{display:block;color:#9fb0c7}.mini-kpis strong{color:#22c55e}
+    .fake-chart{display:grid;grid-template-columns:1fr 1.4fr;gap:18px;margin-top:18px}.donut{height:160px;border-radius:50%;background:conic-gradient(#0d6efd 0 45%,#22c55e 45% 72%,#ffc400 72% 100%);position:relative}.donut:after{content:"";position:absolute;inset:38px;border-radius:50%;background:#08111d}
+    .bars{height:160px;display:flex;gap:12px;align-items:end;background:#0c1728;border-radius:14px;padding:18px}.bars i{flex:1;background:linear-gradient(#2f8cff,#0a3e8e);border-radius:7px 7px 0 0}.bars i:nth-child(1){height:42%}.bars i:nth-child(2){height:62%}.bars i:nth-child(3){height:76%}.bars i:nth-child(4){height:54%}.bars i:nth-child(5){height:88%}
+    .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#e6edf6;padding:0 7%}.kpis div{background:#fff;padding:34px 24px;display:flex;flex-direction:column;gap:4px}.kpis span{font-size:32px}.kpis strong{font-size:24px;color:#0d6efd}.kpis small{color:#667085;font-weight:800}
+    .process{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}.process div{text-align:center;background:#fff;border:1px solid #e6edf6;border-radius:20px;padding:24px 14px}.process span{font-size:34px}.process strong{display:block;margin:10px 0}.process p{color:#667085;font-size:13px}
+    .evidence{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.placeholder{height:190px;border-radius:14px;background:#08111d;margin-bottom:14px;position:relative;overflow:hidden}.placeholder.table:before{content:"";position:absolute;inset:20px;background:repeating-linear-gradient(#dce3ee 0 1px,transparent 1px 32px),repeating-linear-gradient(90deg,#dce3ee 0 1px,transparent 1px 70px);opacity:.75}.placeholder.donut2:before{content:"";position:absolute;width:120px;height:120px;border-radius:50%;top:36px;left:50%;transform:translateX(-50%);background:conic-gradient(#0d6efd 0 45%,#22c55e 45% 72%,#ffc400 72% 100%)}
+    .placeholder.vs{display:flex;align-items:center;justify-content:center;flex-direction:column;color:#fff}.placeholder.vs strong{font-size:30px}.placeholder.vs span{color:#ffc400;font-weight:900}.placeholder.vs em{font-style:normal;color:#9fb0c7}.placeholder.status:before{content:"✅ Concluído    R$ 8.660\A✅ Concluído    R$ 2.583\A✅ Concluído    R$ 25.701\A✅ Concluído    R$ 245";white-space:pre;position:absolute;left:20px;top:28px;color:#fff;font-family:monospace;line-height:2}
+    .results{padding:64px 7%;background:#08111d;color:#fff}.results h2{color:#fff}.result-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:1180px;margin:auto}.result-grid div{background:linear-gradient(145deg,#0d1929,#101d30);border:1px solid rgba(255,255,255,.1);border-radius:22px;padding:32px;text-align:center}.result-grid span{font-size:42px}.result-grid strong{display:block;color:#ffc400;font-size:30px;margin:8px 0}.result-grid small{font-size:16px;font-weight:900}.result-grid p{color:#cbd5e1}
+    .before{background:#fff4f4}.after{background:#effff4}.learning{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.learning div{background:#fff;border:1px solid #e6edf6;border-radius:18px;padding:24px;text-align:center;font-weight:900}
+    .contact{text-align:center}.contact .secondary{color:#101828;border-color:#cfd8e6}.center{justify-content:center}
+    footer{padding:24px 7%;background:#05070b;color:#94a3b8;text-align:center}
+    @media(max-width:960px){.navbar nav{display:none}.hero,.split,.two{grid-template-columns:1fr}h1{font-size:36px}.cards,.skills,.kpis,.process,.evidence,.result-grid,.learning{grid-template-columns:1fr}.section{padding:48px 6%}}
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <a class="brand" href="#inicio"><span class="brand-icon"><i></i><i></i><i></i></span><span>Luiz Felipe</span></a>
+    <nav><a href="#sobre">Sobre</a><a href="#projetos">Projetos</a><a href="#case-tarifas">Case Tarifas</a><a href="#contato">Contato</a></nav>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div>
+        <span class="tagline">Finanças • Data Analytics • Business Intelligence</span>
+        <h1>Transformo dados financeiros em decisões, automações e resultados reais.</h1>
+        <p>Profissional da área Financeira com experiência em conciliação bancária, tesouraria, análise de custos, dashboards, indicadores e automação de processos.</p>
+        <a class="btn primary" href="#projetos">Ver projetos</a><a class="btn secondary" href="mailto:lipe013santos@gmail.com">Entrar em contato</a>
+      </div>
+      <aside class="hero-panel">
+        <p>Projeto em destaque</p><h2>R$ 37.370,55</h2><p>em impacto financeiro por meio da análise de tarifas bancárias.</p><a href="#case-tarifas">Abrir case completo →</a>
+      </aside>
+    </section>
+
+    <section id="sobre" class="section split">
+      <div><span class="kicker">Sobre mim</span><h2>Perfil financeiro com mentalidade analítica.</h2></div>
+      <div class="text-block"><p>Sou profissional da área Financeira com experiência em conciliações bancárias, tesouraria, análise de custos, automação de processos e construção de controles gerenciais.</p><p>Atualmente aplico conhecimentos em Excel, Power BI, SQL e Looker Studio no desenvolvimento de soluções voltadas à análise de dados, dashboards e automação de processos, enquanto continuo ampliando minha formação em Data Analytics.</p></div>
+    </section>
+
+    <section id="projetos" class="section">
+      <div class="section-header"><span class="kicker">Portfólio</span><h2>Projetos em destaque</h2><p>Cases desenvolvidos em contextos reais e estudos práticos aplicados a Finanças e Dados.</p></div>
+      <div class="cards">
+        <article class="card main-card"><span class="label">Case principal</span><h3>Redução de R$ 37 mil em Custos Bancários</h3><p>Análise de tarifas bancárias em 16 CNPJs, identificação de cobranças indevidas, negociação com banco e criação de processo de acompanhamento.</p><a href="#case-tarifas">Ver case completo →</a></article>
+        <article class="card"><span class="label">Excel</span><h3>Automação de Relatórios Financeiros</h3><p>Automação de processos financeiros em Excel para reduzir atividades manuais.</p><small>Em atualização</small></article>
+        <article class="card"><span class="label">Excel • Indicadores</span><h3>Controle de Vendas</h3><p>Controle de vendas e indicadores comerciais desenvolvido para uma empresa de ótica.</p><small>Em atualização</small></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header"><span class="kicker">Competências</span><h2>Ferramentas e áreas de atuação</h2></div>
+      <div class="skills">
+        <div class="skill"><strong>Finanças</strong><p>Conciliação bancária, tesouraria, fluxo de caixa, tarifas bancárias e relatórios gerenciais.</p></div>
+        <div class="skill"><strong>Data Analytics</strong><p>Tratamento de dados, indicadores, dashboards, análise de custos e storytelling com dados.</p></div>
+        <div class="skill"><strong>Ferramentas</strong><p>Excel Avançado, Power Query, Power BI, SQL, Looker Studio, PowerPoint e TOTVS RM.</p></div>
+      </div>
+    </section>
+
+    <section id="case-tarifas" class="hero case-hero">
+      <div>
+        <span class="tagline">Case de Data Analytics</span>
+        <h1>Redução de R$ 37.370,55 em Custos Bancários através da Análise de Tarifas</h1>
+        <p>Projeto desenvolvido na área Financeira para identificar cobranças indevidas, otimizar despesas recorrentes e estruturar um processo de acompanhamento das tarifas bancárias.</p>
+      </div>
+      <div class="dashboard"><div class="dashboard-title">Dashboard de Tarifas Bancárias</div><div class="mini-kpis"><div><small>Economia</small><strong>R$ 11.243</strong></div><div><small>Reembolsos</small><strong>R$ 26.127</strong></div><div><small>Impacto</small><strong>R$ 37.370</strong></div></div><div class="fake-chart"><div class="donut"></div><div class="bars"><i></i><i></i><i></i><i></i><i></i></div></div></div>
+    </section>
+
+    <section class="kpis">
+      <div><span>💰</span><strong>R$ 37.370,55</strong><small>Impacto financeiro</small></div><div><span>🏢</span><strong>16</strong><small>CNPJs analisados</small></div><div><span>📈</span><strong>5</strong><small>Ações concluídas</small></div><div><span>🛠️</span><strong>Excel + PPT</strong><small>Ferramentas utilizadas</small></div>
+    </section>
+
+    <section class="section two">
+      <article class="info"><h2>O desafio</h2><ul><li>Em maio de 2026, as despesas com tarifas bancárias já haviam consumido mais de 40% do orçamento anual.</li><li>Não havia acompanhamento detalhado das tarifas cobradas.</li><li>Existiam cobranças indevidas e serviços não utilizados.</li><li>Havia risco de estouro orçamentário ao final do ano.</li></ul></article>
+      <article class="info"><h2>Objetivo</h2><p>Consolidar, classificar e analisar as tarifas bancárias de 16 CNPJs para identificar divergências, apoiar negociações com instituições financeiras e reduzir custos recorrentes da operação.</p></article>
+    </section>
+
+    <section class="section">
+      <div class="section-header"><span class="kicker">Metodologia</span><h2>Como o projeto foi desenvolvido</h2></div>
+      <div class="process"><div><span>📥</span><strong>Extração</strong><p>Tarifas de 16 CNPJs.</p></div><div><span>🗄️</span><strong>Consolidação</strong><p>Base única.</p></div><div><span>🏷️</span><strong>Classificação</strong><p>Tarifas por categoria.</p></div><div><span>📊</span><strong>Análise</strong><p>Custo unitário.</p></div><div><span>🤝</span><strong>Negociação</strong><p>Tratativas com banco.</p></div><div><span>🎯</span><strong>Resultado</strong><p>Economia e reembolsos.</p></div></div>
+    </section>
+
+    <section class="section">
+      <div class="section-header"><span class="kicker">Evidências</span><h2>Evidências do projeto</h2><p>Os blocos abaixo podem ser substituídos por prints reais com dados sensíveis ocultados.</p></div>
+      <div class="evidence">
+        <article><div class="placeholder table"></div><h3>Base consolidada</h3><p>Consolidação das tarifas bancárias dos 16 CNPJs em uma única base.</p></article>
+        <article><div class="placeholder donut2"></div><h3>Classificação das tarifas</h3><p>Agrupamento das cobranças por categoria para identificar os maiores custos.</p></article>
+        <article><div class="placeholder vs"><strong>R$ 1,70</strong><em>cobrado</em><span>vs</span><strong>R$ 0,70</strong><em>contratado</em></div><h3>Divergência principal</h3><p>Diferença entre a tarifa contratada e o valor cobrado.</p></article>
+        <article><div class="placeholder status"></div><h3>Controle de negociações</h3><p>Acompanhamento de status, ações e benefícios financeiros obtidos.</p></article>
+      </div>
+    </section>
+
+    <section class="results">
+      <div class="section-header"><span class="kicker">Resultados</span><h2>Resultados alcançados</h2></div>
+      <div class="result-grid"><div><span>💰</span><strong>R$ 11.243,00</strong><small>Economia recorrente</small><p>Cancelamento de serviços e pacotes não utilizados.</p></div><div><span>💵</span><strong>R$ 26.127,55</strong><small>Reembolsos obtidos</small><p>Valores recuperados por cobranças indevidas e revisão de tarifas.</p></div><div><span>📈</span><strong>R$ 37.370,55</strong><small>Impacto financeiro total</small><p>Soma entre economias recorrentes e valores recuperados.</p></div></div>
+    </section>
+
+    <section class="section two"><div class="before"><h2>Antes</h2><p>Sem monitoramento estruturado, sem indicadores recorrentes e com cobranças pagas sem validação detalhada.</p></div><div class="after"><h2>Depois</h2><p>Processo estruturado, base consolidada, negociações baseadas em dados e acompanhamento recorrente das tarifas.</p></div></section>
+
+    <section class="section"><div class="section-header"><span class="kicker">Aprendizados</span><h2>O que esse projeto demonstrou</h2></div><div class="learning"><div>Governança sobre despesas financeiras</div><div>Dados aplicados à redução de custos</div><div>Comunicação executiva com indicadores</div><div>Negociação baseada em evidências</div></div></section>
+
+    <section id="contato" class="section contact"><span class="kicker">Contato</span><h2>Vamos conversar?</h2><p>Aberto a oportunidades em Finanças, Data Analytics e Business Intelligence.</p><a class="btn primary" href="https://www.linkedin.com/in/luizd0sanj0s" target="_blank">LinkedIn</a><a class="btn secondary" href="mailto:lipe013santos@gmail.com">E-mail</a></section>
+  </main>
+  <footer><p>© 2026 Luiz Felipe dos Anjos Santos</p></footer>
+</body>
+</html>
