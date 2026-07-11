@@ -1,0 +1,12 @@
+Arquivos para atualizar no GitHub:
+
+1. Substitua o arquivo index.html pelo arquivo desta pasta.
+2. Adicione o arquivo case-03.html na raiz do repositório.
+3. Entre em assets/images e envie as três imagens mantendo os nomes:
+   - case03-cadastro.png
+   - case03-painel-anual.png
+   - case03-consulta-clientes.png
+
+O arquivo style.css foi incluído apenas como referência. Ele é igual ao CSS enviado por você e não precisa ser substituído caso o site atual já esteja usando essa versão.
+
+Nenhum outro arquivo do portfólio precisa ser excluído ou alterado.
