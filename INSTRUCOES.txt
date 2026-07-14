@@ -1,0 +1,10 @@
+ARQUIVOS PARA SUBSTITUIR/ADICIONAR NO REPOSITÓRIO portfolio-luiz
+
+1. Substitua o arquivo atual `index.html` pelo novo `index.html`.
+2. Adicione o arquivo `case-04.html` na raiz do repositório.
+3. Mantenha o arquivo `case-03.html` atual, pois ele pertence ao projeto da ótica.
+4. Os arquivos `CARD_PARA_INDEX.html` e `INSTRUCOES.txt` enviados anteriormente podem ser excluídos do repositório; eles eram apenas arquivos auxiliares.
+5. Não altere `style.css`.
+
+Commit sugerido:
+Adiciona Case #04 de Gestão de Pendências de Conciliação
