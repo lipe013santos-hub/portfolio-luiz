@@ -1,0 +1,13 @@
+INSTRUÇÕES PARA ATUALIZAR O PORTFÓLIO
+
+1. Envie o arquivo `case-03.html` para a raiz do repositório `portfolio-luiz`.
+2. Abra o arquivo `index.html` do portfólio.
+3. Localize a seção de projetos (`id="projetos"`).
+4. Copie o conteúdo de `CARD_PARA_INDEX.html` e cole dentro do mesmo grid dos outros cases.
+5. Não substitua o `style.css`: o novo case foi criado usando exatamente as classes já existentes.
+6. Salve com o commit:
+   Adiciona case do Dashboard de Gestão de Pendências
+7. Aguarde a atualização do GitHub Pages.
+
+Link do dashboard utilizado no case:
+https://lipe013santos-hub.github.io/dashboard-conciliacao-financeira/

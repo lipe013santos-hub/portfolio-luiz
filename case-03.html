@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Case #03 | Sistema de Gestão Comercial e Financeira para Ótica</title>
+  <title>Case #03 | Dashboard de Gestão de Pendências de Conciliação Financeira</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,18 +20,18 @@
 
   <header class="case-hero">
     <div class="container">
-      <a class="btn outline" href="index.html">← Voltar para Home</a>
+      <a class="btn light" href="index.html">← Voltar para Home</a>
       <div class="case-meta">
         <span class="pill">Case #03</span>
         <span class="pill">Projeto profissional</span>
-        <span class="pill">Excel</span>
-        <span class="pill">Gestão comercial e financeira</span>
+        <span class="pill">Business Analytics</span>
+        <span class="pill">HTML, CSS e JavaScript</span>
       </div>
-      <h1>Sistema de Gestão Comercial e Financeira para Ótica</h1>
-      <p>Projeto desenvolvido para estruturar o controle comercial e financeiro de uma ótica, centralizando informações de clientes, vendas, ordens de serviço, faturamento e custos em uma solução desenvolvida no Excel.</p>
+      <h1>Dashboard de Gestão de Pendências de Conciliação Financeira</h1>
+      <p>Solução desenvolvida para consolidar dados financeiros, acompanhar pendências e apoiar o planejamento do fechamento mensal.</p>
       <div class="case-nav">
-        <a class="btn light" href="#entregaveis">Ver entregáveis</a>
-        <a class="btn outline" href="#evidencias">Ver evidências</a>
+        <a class="btn light" href="https://lipe013santos-hub.github.io/dashboard-conciliacao-financeira/" target="_blank" rel="noopener">Abrir dashboard</a>
+        <a class="btn light" href="#evidencias">Ver evidências</a>
       </div>
     </div>
   </header>
@@ -53,144 +53,91 @@
       <article class="article">
         <section class="article-block" id="contexto">
           <h2>Contexto</h2>
-          <p>Uma ótica enquadrada como Microempreendedor Individual (MEI) enfrentava dificuldades para controlar suas operações comerciais e financeiras.</p>
-          <p>Grande parte das informações era registrada manualmente em papel, dificultando consultas sobre clientes, histórico de vendas, ordens de serviço e faturamento.</p>
-          <p>Além disso, não existia uma visão consolidada sobre indicadores importantes para a gestão do negócio, como faturamento mensal, custos operacionais, quantidade de vendas e lucratividade.</p>
-          <p>Diante desse cenário, surgiu a necessidade de desenvolver uma solução simples que centralizasse todas essas informações e facilitasse a gestão do negócio.</p>
+          <p>O acompanhamento das pendências de conciliação financeira era realizado em bases separadas de Contas a Receber, Contas a Pagar e operações de cartão.</p>
+          <p>Essa estrutura dificultava a visualização consolidada das ocorrências, a identificação das empresas com maior volume de pendências e o acompanhamento das tratativas necessárias para o fechamento financeiro mensal.</p>
+          <p>O projeto surgiu da necessidade de transformar registros operacionais dispersos em uma visão única, clara e acessível para apoiar a rotina da área financeira.</p>
         </section>
 
         <section class="article-block" id="objetivo">
           <h2>Objetivo</h2>
-          <p>Desenvolver um sistema simples, intuitivo e de fácil utilização para centralizar as principais informações da operação da ótica.</p>
-          <p>A solução deveria permitir que o proprietário registrasse, consultasse e acompanhasse rapidamente informações relacionadas a:</p>
+          <p>Desenvolver um dashboard capaz de consolidar diferentes bases de conciliação financeira, automatizar o tratamento das informações e disponibilizar indicadores para acompanhamento das pendências e do processo de fechamento mensal.</p>
           <ul>
-            <li>Clientes;</li>
-            <li>Ordens de Serviço;</li>
-            <li>Prescrição óptica;</li>
-            <li>Vendas;</li>
-            <li>Custos;</li>
-            <li>Faturamento;</li>
-            <li>Lucro.</li>
+            <li>Centralizar as bases de Contas a Pagar, Contas a Receber e cartão.</li>
+            <li>Padronizar empresas, bancos, responsáveis, departamentos e status.</li>
+            <li>Permitir análises por banco, empresa e departamento.</li>
+            <li>Apresentar a quantidade e o valor financeiro das pendências.</li>
+            <li>Monitorar os dias úteis restantes até o fechamento.</li>
           </ul>
-          <p>Todas as funcionalidades foram definidas em conjunto com o proprietário, buscando atender às necessidades reais da operação e substituir os controles manuais utilizados anteriormente.</p>
         </section>
 
         <section class="article-block" id="processo">
           <h2>Processo</h2>
-
-          <h3>1. Levantamento de requisitos</h3>
-          <p>Antes do desenvolvimento da solução, realizei reuniões com o proprietário para compreender quais informações eram essenciais para a gestão do negócio.</p>
-          <p>Foram identificadas necessidades relacionadas ao cadastro de clientes, controle financeiro, consultas históricas e armazenamento das prescrições ópticas.</p>
-
-          <h3>2. Estruturação da solução</h3>
-          <p>A partir dos requisitos levantados, desenvolvi uma planilha organizada por exercício (2024, 2025 e 2026), contendo módulos específicos para diferentes finalidades.</p>
-          <p>Cada ano possuía três áreas principais:</p>
           <ul>
-            <li>Cadastro;</li>
-            <li>Painel Anual;</li>
-            <li>Consulta de Clientes.</li>
+            <li>Análise das estruturas utilizadas nas bases de conciliação.</li>
+            <li>Padronização dos nomes das colunas e das informações em comum.</li>
+            <li>Inclusão das classificações de Contas a Pagar e Contas a Receber.</li>
+            <li>Tratamento dos valores para criação de uma coluna de valor absoluto.</li>
+            <li>Consolidação das bases bancárias e de cartão em uma única fonte.</li>
+            <li>Validação dos dados consolidados com os controles financeiros.</li>
+            <li>Desenvolvimento do dashboard utilizando HTML, CSS, JavaScript e JSON.</li>
+            <li>Criação de uma versão demonstrativa com empresas, responsáveis, históricos e valores anonimizados.</li>
           </ul>
-
-          <h3>3. Desenvolvimento dos módulos</h3>
-          <p>Foram desenvolvidos módulos para centralizar as informações da operação.</p>
-
-          <h3>Cadastro</h3>
-          <ul>
-            <li>Ordem de Serviço;</li>
-            <li>Cliente;</li>
-            <li>CPF;</li>
-            <li>Contato;</li>
-            <li>Dados laboratoriais;</li>
-            <li>Prescrição óptica;</li>
-            <li>Valores da venda;</li>
-            <li>Forma de pagamento;</li>
-            <li>NF-e.</li>
-          </ul>
-
-          <h3>Painel Anual</h3>
-          <ul>
-            <li>Quantidade de vendas;</li>
-            <li>Receita;</li>
-            <li>Custos fixos;</li>
-            <li>Custos eventuais;</li>
-            <li>Lucro.</li>
-          </ul>
-
-          <h3>Consulta Inteligente</h3>
-          <p>Também foi desenvolvida uma tela para localização rápida das informações utilizando apenas nome ou CPF, permitindo recuperar automaticamente:</p>
-          <ul>
-            <li>Ordem de Serviço;</li>
-            <li>Contato;</li>
-            <li>Prescrição óptica;</li>
-            <li>Histórico do cliente.</li>
-          </ul>
-
-          <h3>4. Implantação e treinamento</h3>
-          <p>Após finalizar o desenvolvimento, realizei um treinamento com o proprietário da ótica, demonstrando como registrar novas vendas, consultar informações e acompanhar os indicadores do negócio.</p>
-          <p>Como o usuário não possuía experiência com Excel, toda a solução foi desenvolvida priorizando simplicidade, organização e facilidade de utilização.</p>
         </section>
 
         <section class="article-block" id="entregaveis">
           <h2>Entregáveis</h2>
           <div class="metric-grid">
-            <div class="metric"><strong>Cadastro</strong><span>Clientes, OS e informações ópticas</span></div>
-            <div class="metric"><strong>Controle financeiro</strong><span>Faturamento, custos e lucro</span></div>
-            <div class="metric"><strong>Consulta rápida</strong><span>Busca por nome ou CPF</span></div>
+            <div class="metric"><strong>Dashboard web</strong><span>Visualização responsiva e interativa das pendências.</span></div>
+            <div class="metric"><strong>Base consolidada</strong><span>Informações padronizadas em uma única estrutura.</span></div>
+            <div class="metric"><strong>Filtros dinâmicos</strong><span>Análises por banco, empresa e departamento.</span></div>
+            <div class="metric"><strong>Indicadores</strong><span>Quantidade e valor absoluto das pendências.</span></div>
+            <div class="metric"><strong>Fechamento mensal</strong><span>Contagem de dias úteis considerando feriados.</span></div>
+            <div class="metric"><strong>Versão pública</strong><span>Dados anonimizados para apresentação no portfólio.</span></div>
           </div>
-          <ul>
-            <li>Sistema de cadastro de clientes;</li>
-            <li>Controle financeiro da operação;</li>
-            <li>Consulta inteligente de clientes;</li>
-            <li>Histórico anual organizado por exercício (2024, 2025 e 2026).</li>
-          </ul>
         </section>
 
         <section class="article-block" id="insights">
           <h2>Insights</h2>
-          <p>A implementação da solução proporcionou melhorias importantes para a gestão da ótica:</p>
+          <p>O dashboard permite responder rapidamente perguntas importantes para a gestão das conciliações:</p>
           <ul>
-            <li>Centralização das informações da empresa;</li>
-            <li>Organização das Ordens de Serviço;</li>
-            <li>Maior controle sobre vendas e faturamento;</li>
-            <li>Acompanhamento dos custos operacionais;</li>
-            <li>Consulta rápida do histórico dos clientes;</li>
-            <li>Apoio na gestão financeira e no acompanhamento do faturamento anual do MEI.</li>
+            <li>Quais empresas concentram o maior número de pendências?</li>
+            <li>Qual é o valor financeiro total ainda pendente de conciliação?</li>
+            <li>Como as pendências estão distribuídas entre Contas a Pagar e Contas a Receber?</li>
+            <li>Quais instituições financeiras apresentam maior volume de ocorrências?</li>
+            <li>Quais registros devem ser priorizados conforme a proximidade do fechamento?</li>
+            <li>Quantos dias úteis restam até o segundo dia útil do mês seguinte?</li>
           </ul>
-
-          <h3>Ferramenta utilizada</h3>
-          <ul>
-            <li>Excel</li>
-          </ul>
-
-          <h3>Competências demonstradas</h3>
-          <ul>
-            <li>Levantamento de requisitos;</li>
-            <li>Entendimento do negócio;</li>
-            <li>Organização de processos;</li>
-            <li>Estruturação de dados;</li>
-            <li>Modelagem de controles;</li>
-            <li>Comunicação com o usuário;</li>
-            <li>Treinamento;</li>
-            <li>Excel.</li>
-          </ul>
+          <p>A principal contribuição foi transformar diferentes bases operacionais em uma visão gerencial única, facilitando a priorização das tratativas e o acompanhamento do fechamento financeiro.</p>
         </section>
 
         <section class="article-block" id="evidencias">
           <h2>Evidências</h2>
-          <p>Os dados pessoais e financeiros foram ocultados para preservar a confidencialidade das informações.</p>
+          <p>A versão publicada utiliza dados demonstrativos e anonimizados para preservar todas as informações internas do processo original.</p>
           <div class="evidence-grid">
             <div class="evidence">
-              <img src="assets/images/case03-cadastro.png" alt="Cadastro centralizado de clientes e ordens de serviço">
-              <div><strong>Cadastro centralizado</strong><span>Tela criada para reunir clientes, ordens de serviço, dados laboratoriais, prescrição óptica e informações financeiras.</span></div>
+              <div class="placeholder">DASHBOARD COMPLETO</div>
+              <div>
+                <strong>Visão consolidada</strong>
+                <span>KPIs, filtros, gráficos e detalhamento das pendências em uma única página.</span>
+              </div>
             </div>
             <div class="evidence">
-              <img src="assets/images/case03-painel-anual.png" alt="Painel anual de faturamento, custos e lucro">
-              <div><strong>Painel gerencial anual</strong><span>Acompanhamento de vendas, receita, custos fixos, custos eventuais e lucro ao longo do ano.</span></div>
+              <div class="placeholder">FILTROS E INDICADORES</div>
+              <div>
+                <strong>Análise dinâmica</strong>
+                <span>Filtros por banco, empresa e departamento com atualização dos indicadores.</span>
+              </div>
             </div>
             <div class="evidence">
-              <img src="assets/images/case03-consulta-clientes.png" alt="Consulta inteligente de clientes por nome ou CPF">
-              <div><strong>Consulta inteligente de clientes</strong><span>Busca por nome ou CPF para recuperar Ordem de Serviço, contato e prescrição óptica.</span></div>
+              <div class="placeholder">FECHAMENTO FINANCEIRO</div>
+              <div>
+                <strong>Controle do prazo</strong>
+                <span>Card com a data prevista e os dias úteis restantes para o fechamento.</span>
+              </div>
             </div>
+          </div>
+          <div class="case-nav">
+            <a class="btn" href="https://lipe013santos-hub.github.io/dashboard-conciliacao-financeira/" target="_blank" rel="noopener">Visualizar projeto publicado</a>
           </div>
         </section>
       </article>
