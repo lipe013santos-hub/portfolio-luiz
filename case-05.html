@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Case #05 | Análises Comerciais com SQL Server</title>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<nav class="nav">
+<div class="container nav-inner">
+<a class="logo" href="index.html">Luiz Felipe dos Anjos Santos</a>
+<div class="nav-links">
+<a href="index.html#sobre">Sobre</a>
+<a href="index.html#projetos">Projetos</a>
+<a href="index.html#contato">Contato</a>
+</div>
+</div>
+</nav>
+<header class="case-hero">
+<div class="container">
+<a class="btn light" href="index.html">← Voltar para Home</a>
+<div class="case-meta">
+<span class="pill">Case #05</span>
+<span class="pill">Projeto de Estudos</span>
+<span class="pill">SQL</span>
+<span class="pill">SQL Server</span>
+<span class="pill">Business Analytics</span>
+</div>
+<h1>Análises Comerciais com SQL Server</h1>
+<p>Projeto desenvolvido utilizando SQL Server e a base Contoso para responder perguntas de negócio por meio de consultas SQL, relacionamentos entre tabelas e análise de indicadores comerciais.</p>
+<div class="case-nav">
+<a class="btn light" href="#evidencias">Ver evidências</a>
+</div>
+</div>
+</header>
+<main class="content">
+<div class="container content-grid">
+<aside class="sidebar">
+<div class="card">
+<strong>Navegação</strong>
+<a href="#contexto">Contexto</a>
+<a href="#objetivo">Objetivo</a>
+<a href="#processo">Processo</a>
+<a href="#entregaveis">Entregáveis</a>
+<a href="#insights">Insights</a>
+<a href="#evidencias">Evidências</a>
+</div>
+</aside>
+<article class="article">
+<section class="article-block" id="contexto">
+<h2>Contexto</h2>
+<p>A base Contoso possui centenas de tabelas relacionadas entre si, contendo informações de produtos, vendas, clientes, lojas, canais comerciais e planejamento estratégico.</p>
+<p>O projeto teve como objetivo compreender essa estrutura relacional e desenvolver consultas SQL capazes de transformar dados distribuídos em informações úteis para análise de negócios.</p>
+</section>
+<section class="article-block" id="objetivo">
+<h2>Objetivo</h2>
+<p>Aplicar conceitos de SQL Server para consultar uma base de dados relacional utilizando JOINs, filtros e agregações, respondendo perguntas relacionadas a vendas, produtos, categorias, canais comerciais, lojas e planejamento estratégico.</p>
+</section>
+ <section class="article-block" id="processo">
+          <h2>Processo</h2>
+        
+          <h3>Exploração da base</h3>
+
+           <ul>
+          <li>Identificação das tabelas</li>
+          <li>Entendimento das chaves</li>
+          <li>Relação entre fatos e dimensões</li>
+          </ul>
+
+          <h3>Construção dos relacionamentos</h3>
+        
+          <ul>
+            <li>INNER JOIN</li>
+            <li>LEFT JOIN</li>
+          
+          </ul>
+          
+          <h3>Agregações</h3>
+          <ul>
+          <li>GROUP BY</li>
+          <li>SUM</li>
+          <li>ORDER BY</li>
+          </ul>
+
+          <h3>Consultas analíticas</h3>
+        
+          <ul>
+            <li>Produtos</li>
+            <li>Categorias</li>
+            <li>Subcategorias</li>
+            <li>Lojas</li>
+            <li>Canais</li>
+            <li>Planejamento Estratégico</li>
+          </ul>
+        </section>
+
+<section class="article-block" id="entregaveis">
+<h2>Entregáveis</h2>
+<div class="metric-grid">
+<div class="metric"><strong>Consultas SQL</strong><span>Desenvolvimento de consultas utilizando SELECT, filtros e ordenações.</span></div>
+<div class="metric"><strong>Relacionamentos</strong><span>Construção de INNER JOIN e LEFT JOIN entre tabelas da base Contoso.</span></div>
+<div class="metric"><strong>Análises Comerciais</strong><span>Exploração de indicadores de vendas, produtos, categorias e canais.</span></div>
+<div class="metric"><strong>Agregações</strong><span>Utilização de GROUP BY e funções de agregação para consolidação das informações.</span></div>
+<div class="metric"><strong>Base Contoso</strong><span>Aplicação prática em banco de dados relacional no SQL Server.</span></div>
+<div class="metric"><strong>Documentação</strong><span>Resolução estruturada dos exercícios propostos durante o estudo.</span></div>
+</div>
+</section>
+<section class="article-block" id="insights">
+<h2>Insights</h2>
+<p>O projeto permitiu responder questões como:</p>
+<ul>
+<li>Quais produtos apresentam maior volume de vendas?</li>
+<li>Quais categorias e subcategorias possuem melhor desempenho?</li>
+<li>Como as vendas estão distribuídas entre os canais comerciais?</li>
+<li>Qual é a evolução das vendas por mês e ano?</li>
+<li>Como consolidar informações provenientes de diferentes tabelas relacionais?</li>
+</ul>
+</section>
+<section class="article-block" id="evidencias"><h2>Evidências</h2>
+<h3>Consulta 01 — Produtos e Subcategorias</h3><p>Relacionamento entre produtos e suas respectivas subcategorias, permitindo compreender a estrutura do catálogo e a organização dos dados.</p><img alt="Base operacional" src="assets/images/case05-01-join-produtos-subcategorias.png.png" style="width:100%;border-radius:14px;margin:18px 0 40px;box-shadow:0 10px 24px rgba(0,0,0,.10);"/>
+<h3>Consulta 02 — Vendas por Período</h3><p>Consolidação do valor total de vendas por mês e ano, permitindo analisar o comportamento das vendas ao longo do tempo.</p><img alt="Dashboard" src="assets/images/case05-02-vendas-por-mes.png.png" style="width:100%;border-radius:14px;margin:18px 0 40px;box-shadow:0 10px 24px rgba(0,0,0,.10);"/>
+<h3>Consulta 03 — Produtos Mais Vendidos</h3><p>Análise da quantidade vendida por produto, categoria, subcategoria e cor, identificando os itens com maior volume de vendas</p><img alt="Filtros" src="assets/images/case05-03-vendas-por-produto.png.png" style="width:100%;border-radius:14px;margin:18px 0 40px;box-shadow:0 10px 24px rgba(0,0,0,.10);"/>
+<h3>Consulta 04 — Plano Estratégico por Conta</h3><p>Consulta utilizada para relacionar informações do planejamento estratégico aos tipos de contas e respectivos valores registrados.</p><img alt="Tabela" src="assets/images/case05-04-strategy-plan-account.png.png" style="width:100%;border-radius:14px;margin:18px 0 40px;box-shadow:0 10px 24px rgba(0,0,0,.10);"/>
+<h3>Consulta 05 — Plano Estratégico por Cenário</h3><p>Integração entre planejamento estratégico, contas e cenários para visualizar os valores registrados em cada contexto de negócio.</p><img alt="Tabela" src="assets/images/case05-05-strategy-plan-scenario.png.png" style="width:100%;border-radius:14px;margin:18px 0 40px;box-shadow:0 10px 24px rgba(0,0,0,.10);"/>
+<h3>Consulta 06 — Vendas por Canal</h3><p>Agrupamento das vendas por canal comercial, permitindo comparar o desempenho entre loja física, catálogo, distribuidores e vendas online.</p><img alt="Tabela" src="assets/images/case05-06-vendas-por-canal.png.png" style="width:100%;border-radius:14px;margin:18px 0 40px;box-shadow:0 10px 24px rgba(0,0,0,.10);"/>
+<h3>Consulta 07 — Categorias e Subcategorias</h3><p>Estrutura hierárquica das categorias e subcategorias dos produtos, utilizada para apoiar consultas e análises comerciais.</p><img alt="Tabela" src="assets/images/case05-07-subcategoria-categoria.png.png" style="width:100%;border-radius:14px;margin:18px 0 40px;box-shadow:0 10px 24px rgba(0,0,0,.10);"/>
+<h3>Consulta 08 — Vendas e Devoluções por Loja</h3><p>Comparação entre o volume de vendas e devoluções de cada loja, auxiliando na avaliação do desempenho operacional.</p><img alt="Tabela" src="assets/images/case05-08-vendas-devolucoes-lojas.png.png" style="width:100%;border-radius:14px;margin:18px 0 40px;box-shadow:0 10px 24px rgba(0,0,0,.10);"/>
+<h3>Consulta 09 — Informações das Lojas</h3><p>Consulta que reúne informações das lojas, quantidade de funcionários e localização geográfica para análises de distribuição e operação.</p><img alt="Tabela" src="assets/images/case05-10-lojas-geografia.png.png" style="width:100%;border-radius:14px;margin:18px 0 40px;box-shadow:0 10px 24px rgba(0,0,0,.10);"/>
+
+
+  <section class="article-block">
+          <h2>Aprendizado</h2>
+          <p>Este projeto consolidou minha compreensão sobre bancos de dados relacionais, permitindo desenvolver consultas SQL para transformar dados brutos em informações úteis para análise. Durante sua construção, aprofundei conhecimentos em relacionamentos entre tabelas, agregações, filtros, JOINs e organização de consultas voltadas para responder perguntas de negócio.</p>
+        </section>
+      </article>
+    </div>
+  </main>
+      </article>
+    </div>
+  </main>
+
+</article>
+</div>
+</main>
+<footer class="footer" id="contato">
+<div class="container">
+<div>
+<h2>Vamos conversar?</h2>
+<p>Aberto a oportunidades em Análise Financeira, Business Analytics e projetos de dados aplicados ao negócio.</p>
+</div>
+<div>
+<a href="https://www.linkedin.com/in/luizd0sanj0s" target="_blank">LinkedIn</a>
+<a href="mailto:lfelipe.anj0santos@gmail.com">E-mail</a>
+</div>
+</div>
+</footer>
+</body>
+</html>
