@@ -103,3 +103,21 @@ section{padding:76px 0}
 .footer .container > div:last-child{display:flex;gap:18px;flex-wrap:wrap;}
 .footer a{margin-left:0;}
 @media(max-width:850px){.profile-img img{height:300px}.footer .container > div:last-child{margin-top:18px}}
+/* ==========================
+   Evidências dos Cases
+========================== */
+
+.evidence-img{
+    width:100%;
+    border-radius:14px;
+    margin:18px 0 40px;
+    box-shadow:0 10px 24px rgba(0,0,0,.10);
+}
+
+.evidence-subtitle{
+    margin-top:24px;
+    margin-bottom:12px;
+    font-size:1rem;
+    font-weight:700;
+    color:#111;
+}

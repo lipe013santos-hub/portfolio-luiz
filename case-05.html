@@ -118,17 +118,119 @@
 <li>Como consolidar informações provenientes de diferentes tabelas relacionais?</li>
 </ul>
 </section>
-<section class="article-block" id="evidencias"><h2>Evidências</h2>
-<h3>Consulta 01 — Produtos e Subcategorias</h3><p>Relacionamento entre produtos e suas respectivas subcategorias, permitindo compreender a estrutura do catálogo e a organização dos dados.</p><img alt="Base operacional" src="assets/images/case05-01-join-produtos-subcategorias.png.png" style="width:100%;border-radius:14px;margin:18px 0 40px;box-shadow:0 10px 24px rgba(0,0,0,.10);"/>
-<h3>Consulta 02 — Vendas por Período</h3><p>Consolidação do valor total de vendas por mês e ano, permitindo analisar o comportamento das vendas ao longo do tempo.</p><img alt="Dashboard" src="assets/images/case05-02-vendas-por-mes.png.png" style="width:100%;border-radius:14px;margin:18px 0 40px;box-shadow:0 10px 24px rgba(0,0,0,.10);"/>
-<h3>Consulta 03 — Produtos Mais Vendidos</h3><p>Análise da quantidade vendida por produto, categoria, subcategoria e cor, identificando os itens com maior volume de vendas</p><img alt="Filtros" src="assets/images/case05-03-vendas-por-produto.png.png" style="width:100%;border-radius:14px;margin:18px 0 40px;box-shadow:0 10px 24px rgba(0,0,0,.10);"/>
-<h3>Consulta 04 — Plano Estratégico por Conta</h3><p>Consulta utilizada para relacionar informações do planejamento estratégico aos tipos de contas e respectivos valores registrados.</p><img alt="Tabela" src="assets/images/case05-04-strategy-plan-account.png.png" style="width:100%;border-radius:14px;margin:18px 0 40px;box-shadow:0 10px 24px rgba(0,0,0,.10);"/>
-<h3>Consulta 05 — Plano Estratégico por Cenário</h3><p>Integração entre planejamento estratégico, contas e cenários para visualizar os valores registrados em cada contexto de negócio.</p><img alt="Tabela" src="assets/images/case05-05-strategy-plan-scenario.png.png" style="width:100%;border-radius:14px;margin:18px 0 40px;box-shadow:0 10px 24px rgba(0,0,0,.10);"/>
-<h3>Consulta 06 — Vendas por Canal</h3><p>Agrupamento das vendas por canal comercial, permitindo comparar o desempenho entre loja física, catálogo, distribuidores e vendas online.</p><img alt="Tabela" src="assets/images/case05-06-vendas-por-canal.png.png" style="width:100%;border-radius:14px;margin:18px 0 40px;box-shadow:0 10px 24px rgba(0,0,0,.10);"/>
-<h3>Consulta 07 — Categorias e Subcategorias</h3><p>Estrutura hierárquica das categorias e subcategorias dos produtos, utilizada para apoiar consultas e análises comerciais.</p><img alt="Tabela" src="assets/images/case05-07-subcategoria-categoria.png.png" style="width:100%;border-radius:14px;margin:18px 0 40px;box-shadow:0 10px 24px rgba(0,0,0,.10);"/>
-<h3>Consulta 08 — Vendas e Devoluções por Loja</h3><p>Comparação entre o volume de vendas e devoluções de cada loja, auxiliando na avaliação do desempenho operacional.</p><img alt="Tabela" src="assets/images/case05-08-vendas-devolucoes-lojas.png.png" style="width:100%;border-radius:14px;margin:18px 0 40px;box-shadow:0 10px 24px rgba(0,0,0,.10);"/>
-<h3>Consulta 09 — Informações das Lojas</h3><p>Consulta que reúne informações das lojas, quantidade de funcionários e localização geográfica para análises de distribuição e operação.</p><img alt="Tabela" src="assets/images/case05-10-lojas-geografia.png.png" style="width:100%;border-radius:14px;margin:18px 0 40px;box-shadow:0 10px 24px rgba(0,0,0,.10);"/>
+<section class="article-block" id="evidencias">
+    <h2>Evidências</h2>
+<h3>Perguntas de Negócio Respondidas com SQL</h3>
+    <!-- Consulta 01 -->
+    <h3>Como os produtos estão organizados dentro das categorias do catálogo?</h3>
+    <p>
+        Relacionamento entre produtos e suas respectivas subcategorias,
+        permitindo compreender a estrutura do catálogo e a organização dos dados.
+    </p>
 
+    <img class="evidence-img"
+        src="assets/images/case05-01-join-produtos-subcategorias.png.png"
+        alt="Consulta SQL - Produtos e Categorias">
+
+    <!-- Consulta 02 -->
+    <h3>Como evoluíram as vendas ao longo dos meses?</h3>
+    <p>
+        Consolidação do valor total de vendas por mês e ano,
+        permitindo analisar o comportamento das vendas ao longo do tempo.
+    </p>
+
+    <img class="evidence-img"
+        src="assets/images/case05-02-vendas-por-mes.png.png"
+        alt="Consulta SQL - Vendas por mês">
+
+    <!-- Consulta 03 -->
+    <h3>Quais produtos apresentaram maior volume de vendas?</h3>
+    <p>
+        Análise da quantidade vendida por produto, categoria,
+        subcategoria e cor, identificando os itens com maior volume de vendas.
+    </p>
+
+    <h4 class="evidence-subtitle">Consulta SQL</h4>
+
+    <img class="evidence-img"
+        src="assets/images/case05-03-vendas-por-produto.png.png"
+        alt="Consulta SQL">
+
+    <h4 class="evidence-subtitle">Resultado da Consulta</h4>
+
+    <img class="evidence-img"
+        src="assets/images/case05-03-vendas-por-produto.png (2).png"
+        alt="Resultado da consulta">
+
+    <!-- Consulta 04 -->
+    <h3>Quais contas compõem o planejamento estratégico da empresa?</h3>
+    <p>
+        Consulta utilizada para relacionar informações do planejamento estratégico
+        aos tipos de contas e respectivos valores registrados.
+    </p>
+
+    <img class="evidence-img"
+        src="assets/images/case05-04-strategy-plan-account.png.png"
+        alt="Planejamento Estratégico">
+
+    <!-- Consulta 05 -->
+    <h3>Como os valores do planejamento variam entre os diferentes cenários?</h3>
+    <p>
+        Integração entre planejamento estratégico, contas e cenários para
+        visualizar os valores registrados em cada contexto de negócio.
+    </p>
+
+    <img class="evidence-img"
+        src="assets/images/case05-05-strategy-plan-scenario.png.png"
+        alt="Planejamento Estratégico por Cenário">
+
+    <!-- Consulta 06 -->
+    <h3>Qual canal de vendas apresentou maior volume comercial?</h3>
+    <p>
+        Agrupamento das vendas por canal comercial,
+        permitindo comparar o desempenho entre loja física,
+        catálogo, distribuidores e vendas online.
+    </p>
+
+    <img class="evidence-img"
+        src="assets/images/case05-06-vendas-por-canal.png.png"
+        alt="Canal de vendas">
+
+    <!-- Consulta 07 -->
+    <h3>Como está estruturada a hierarquia de categorias dos produtos?</h3>
+    <p>
+        Estrutura hierárquica das categorias e subcategorias dos produtos,
+        utilizada para apoiar consultas e análises comerciais.
+    </p>
+
+    <img class="evidence-img"
+        src="assets/images/case05-07-subcategoria-categoria.png.png"
+        alt="Categorias e Subcategorias">
+
+    <!-- Consulta 08 -->
+    <h3>Quais lojas apresentaram maior volume de vendas e devoluções?</h3>
+    <p>
+        Comparação entre o volume de vendas e devoluções de cada loja,
+        auxiliando na avaliação do desempenho operacional.
+    </p>
+
+    <img class="evidence-img"
+        src="assets/images/case05-08-vendas-devolucoes-lojas.png.png"
+        alt="Vendas e Devoluções">
+
+    <!-- Consulta 09 -->
+    <h3>Como as lojas estão distribuídas geograficamente e qual sua estrutura operacional?</h3>
+    <p>
+        Consulta que reúne informações das lojas,
+        quantidade de funcionários e localização geográfica
+        para análises de distribuição e operação.
+    </p>
+
+    <img class="evidence-img"
+        src="assets/images/case05-10-lojas-geografia.png.png"
+        alt="Lojas e Geografia">
+
+</section>
 
   <section class="article-block">
           <h2>Aprendizado</h2>
